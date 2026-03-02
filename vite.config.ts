@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/Paula-Francisco-Portfolio-Website/",
+  base: "/", //eto ung problem kasi napunta sya sa link na to dapat blank
 
   server: {
     host: "::",
