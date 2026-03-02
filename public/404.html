@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="refresh" content="0; url=./" />
     <script>
-        // SPA redirect for GitHub Pages
-        var path = location.pathname.replace(/\/[^/]*$/, "/");
-        location.replace(path);
+        // Redirect all 404s to index.html for SPA routing on GitHub Pages
+        var repo = "/Paula-Francisco-Portfolio-Website";
+        var l = window.location;
+        l.replace(l.protocol + "//" + l.host + repo + "/?p=" + encodeURIComponent(l.pathname.replace(repo, "") + l.search + l.hash));
     </script>
 </head>
 
